@@ -40,7 +40,7 @@ for province, coordinates in provinces.items():
         radius=10,
         color='blue',
         fill=True,
-        fill_color='blue',
+        fill_color='green',
         fill_opacity=0.6,
         popup=province
     ).add_to(south_africa_map)
