@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e6486c6070d1b118131280eead5a829a {
+                #map_b241cd430bb92deae0fb6b5b00b7cbda {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,34 +39,246 @@
 <body>
     
     
-            <div class="folium-map" id="map_e6486c6070d1b118131280eead5a829a" ></div>
+    <script>
+    var map = L.map('map').setView([-30.5595, 22.9375], 5);
+    L.control.zoom({
+        position: 'bottomleft'
+    }).addTo(map);
+    </script>
+    
+            <div class="folium-map" id="map_b241cd430bb92deae0fb6b5b00b7cbda" ></div>
         
 </body>
 <script>
     
     
-            var map_e6486c6070d1b118131280eead5a829a = L.map(
-                "map_e6486c6070d1b118131280eead5a829a",
+            var map_b241cd430bb92deae0fb6b5b00b7cbda = L.map(
+                "map_b241cd430bb92deae0fb6b5b00b7cbda",
                 {
                     center: [-30.5595, 22.9375],
                     crs: L.CRS.EPSG3857,
                     zoom: 5,
-                    zoomControl: true,
+                    zoomControl: false,
                     preferCanvas: false,
                 }
             );
+            L.control.scale().addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
 
             
 
         
     
-            var tile_layer_960721b1f538f6592827c238d70bda99 = L.tileLayer(
+            var tile_layer_8aa5e5c95347f54a542e89204dff30b0 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_960721b1f538f6592827c238d70bda99.addTo(map_e6486c6070d1b118131280eead5a829a);
+            tile_layer_8aa5e5c95347f54a542e89204dff30b0.addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+            var circle_marker_bdb127ffd13f5d85c699413c2604d88b = L.circleMarker(
+                [-32.2968, 26.4194],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_a869ebc62b44ec20bd04ae073c974b46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70b18f3d18477e94515197f34e71ea8f = $(`<div id="html_70b18f3d18477e94515197f34e71ea8f" style="width: 100.0%; height: 100.0%;">Eastern Cape</div>`)[0];
+                popup_a869ebc62b44ec20bd04ae073c974b46.setContent(html_70b18f3d18477e94515197f34e71ea8f);
+            
+        
+
+        circle_marker_bdb127ffd13f5d85c699413c2604d88b.bindPopup(popup_a869ebc62b44ec20bd04ae073c974b46)
+        ;
+
+        
+    
+    
+            var circle_marker_f09a7c3a1ff8a1b8965480423fcfc615 = L.circleMarker(
+                [-28.4541, 26.7968],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_d783da98b642c62566bfa3ab8cbc0eea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_524aed978c66f014e2557bf08d88e7c0 = $(`<div id="html_524aed978c66f014e2557bf08d88e7c0" style="width: 100.0%; height: 100.0%;">Free State</div>`)[0];
+                popup_d783da98b642c62566bfa3ab8cbc0eea.setContent(html_524aed978c66f014e2557bf08d88e7c0);
+            
+        
+
+        circle_marker_f09a7c3a1ff8a1b8965480423fcfc615.bindPopup(popup_d783da98b642c62566bfa3ab8cbc0eea)
+        ;
+
+        
+    
+    
+            var circle_marker_9700f543dcc3962ecc39914a4d66c6b8 = L.circleMarker(
+                [-26.2708, 28.1123],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_79efa82edf5fab870adcac59696ba269 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a77a9cc0d1a6e6de56e85fcd7d10df8f = $(`<div id="html_a77a9cc0d1a6e6de56e85fcd7d10df8f" style="width: 100.0%; height: 100.0%;">Gauteng</div>`)[0];
+                popup_79efa82edf5fab870adcac59696ba269.setContent(html_a77a9cc0d1a6e6de56e85fcd7d10df8f);
+            
+        
+
+        circle_marker_9700f543dcc3962ecc39914a4d66c6b8.bindPopup(popup_79efa82edf5fab870adcac59696ba269)
+        ;
+
+        
+    
+    
+            var circle_marker_5abd28f2f12ad6813c99781acbcb7080 = L.circleMarker(
+                [-29.0, 31.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_4626d480645ef54683930aac8acc1130 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6d68d6ac5fbfd57cd68d5fddcaa3aec = $(`<div id="html_d6d68d6ac5fbfd57cd68d5fddcaa3aec" style="width: 100.0%; height: 100.0%;">KwaZulu-Natal</div>`)[0];
+                popup_4626d480645ef54683930aac8acc1130.setContent(html_d6d68d6ac5fbfd57cd68d5fddcaa3aec);
+            
+        
+
+        circle_marker_5abd28f2f12ad6813c99781acbcb7080.bindPopup(popup_4626d480645ef54683930aac8acc1130)
+        ;
+
+        
+    
+    
+            var circle_marker_419180ba199e4cf4b7c2841567708a6a = L.circleMarker(
+                [-23.4013, 29.4179],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_02593d774188d856350f6e6e22b02674 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63a9251a38a68940c820be50025b9d2b = $(`<div id="html_63a9251a38a68940c820be50025b9d2b" style="width: 100.0%; height: 100.0%;">Limpopo</div>`)[0];
+                popup_02593d774188d856350f6e6e22b02674.setContent(html_63a9251a38a68940c820be50025b9d2b);
+            
+        
+
+        circle_marker_419180ba199e4cf4b7c2841567708a6a.bindPopup(popup_02593d774188d856350f6e6e22b02674)
+        ;
+
+        
+    
+    
+            var circle_marker_a40a6a43522808f6030b5452b8ace96c = L.circleMarker(
+                [-25.5653, 30.5273],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_d66d324942c887b919824e85a3d415e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c347c243401affc1ae1e0dd9241ab04c = $(`<div id="html_c347c243401affc1ae1e0dd9241ab04c" style="width: 100.0%; height: 100.0%;">Mpumalanga</div>`)[0];
+                popup_d66d324942c887b919824e85a3d415e8.setContent(html_c347c243401affc1ae1e0dd9241ab04c);
+            
+        
+
+        circle_marker_a40a6a43522808f6030b5452b8ace96c.bindPopup(popup_d66d324942c887b919824e85a3d415e8)
+        ;
+
+        
+    
+    
+            var circle_marker_1be9f55c56733cd335738e1392ef18d8 = L.circleMarker(
+                [-29.0467, 21.8569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_09b1db50806e3d19c68b62c44deff87f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e803c03c98f2c1a6f20d74eddfbd5d9c = $(`<div id="html_e803c03c98f2c1a6f20d74eddfbd5d9c" style="width: 100.0%; height: 100.0%;">Northern Cape</div>`)[0];
+                popup_09b1db50806e3d19c68b62c44deff87f.setContent(html_e803c03c98f2c1a6f20d74eddfbd5d9c);
+            
+        
+
+        circle_marker_1be9f55c56733cd335738e1392ef18d8.bindPopup(popup_09b1db50806e3d19c68b62c44deff87f)
+        ;
+
+        
+    
+    
+            var circle_marker_8159d47a1733188e46f93a3f63f2388d = L.circleMarker(
+                [-27.1254, 25.7551],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_7ba30aa830fbd887e53d3351e7931d48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_816ad6031c2528d18d7b4691dbdbfdde = $(`<div id="html_816ad6031c2528d18d7b4691dbdbfdde" style="width: 100.0%; height: 100.0%;">North West</div>`)[0];
+                popup_7ba30aa830fbd887e53d3351e7931d48.setContent(html_816ad6031c2528d18d7b4691dbdbfdde);
+            
+        
+
+        circle_marker_8159d47a1733188e46f93a3f63f2388d.bindPopup(popup_7ba30aa830fbd887e53d3351e7931d48)
+        ;
+
+        
+    
+    
+            var circle_marker_d52565a98754bcbeffb63c16ec09b164 = L.circleMarker(
+                [-33.2278, 21.8569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+        
+    
+        var popup_9fd53ed74decc08f701a501d2597d689 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e9a1ffc63ba377405c10c565fdf19ab = $(`<div id="html_6e9a1ffc63ba377405c10c565fdf19ab" style="width: 100.0%; height: 100.0%;">Western Cape</div>`)[0];
+                popup_9fd53ed74decc08f701a501d2597d689.setContent(html_6e9a1ffc63ba377405c10c565fdf19ab);
+            
+        
+
+        circle_marker_d52565a98754bcbeffb63c16ec09b164.bindPopup(popup_9fd53ed74decc08f701a501d2597d689)
+        ;
+
+        
+    
+    
+            var layer_control_972d6a593c9226c245c609d66982ad85_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8aa5e5c95347f54a542e89204dff30b0,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_972d6a593c9226c245c609d66982ad85 = L.control.layers(
+                layer_control_972d6a593c9226c245c609d66982ad85_layers.base_layers,
+                layer_control_972d6a593c9226c245c609d66982ad85_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b241cd430bb92deae0fb6b5b00b7cbda);
+
         
 </script>
 </html>
