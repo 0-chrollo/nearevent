@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>NearEvents</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="logos.jpg" alt="Logo">
+        <ul>
+            <li><a href="#"><i class="fas fa-info-circle" style="color:  rgb(60, 73, 92);"></i> About us</a></li>
+            <li><a href="projects.html"><i class="fas fa-project-diagram" style="color:  rgb(60, 73, 92);"></i> Our Projects</a></li>
+            <li><a href="#"><i class="fas fa-question-circle" style="color:  rgb(60, 73, 92);"></i> FAQs</a></li>
+            <li><a href="#"><i class="fas fa-envelope" style="color:  rgb(60, 73, 92);"></i> Contact Us</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="menu" id="menu">
+        <ul class="mobiles">
+            <a href="#"><i class="fas fa-info-circle" style="color:  rgb(60, 73, 92);"></i> Add Event</a></li>
+            <a href="projects.html"><i class="fas fa-project-diagram" style="color:  rgb(60, 73, 92);"></i> Near Wi-Fi</a></li>
+            <a href="#"><i class="fas fa-question-circle" style="color:  rgb(60, 73, 92);"></i> Login</a></li>
+            <a href="#"><i class="fas fa-envelope" style="color: rgb(60, 73, 92);"></i> Signup</a></li>
+            <a href="#"><i class="fas fa-envelope" style="color: rgb(60, 73, 92);"></i> About</a></li>
+        </ul>
+        <p class="info">The map data for Public Wi-Fi latitude and longitude were collected manually,
+             some locations that give access to Free Wi-Fi may not appear. </p>
+        <style>
+            .info {
+                margin-top: 10vh;
+                padding: 1vh;
+                font-size: 11px;
+                color: rgb(213, 213, 213);
+            }
+            .map-should-be-here {
+                padding-top: 7.5vh;
+            }
+@media screen and (max-width: 768px) {
+        .map-should-be-here {
+
+       padding-top: 6vh;
+        }
+    }
+
+    iframe{
+        border:none;
+        width: 100%; 
+        height: 92vh;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        iframe{
+            width: 100%; 
+        height: 93vh;
+      
+        }
+    }
+
+            
+        </style>
+    </div>
+
+    <div class="container">
+        <div class="left-navbar">
+          <!-- List items here -->
+          <ul class="map-items">
+            <li>Add Event</li><br/>
+            <li>Login</li><br/>
+            <li>sign in</li><br/>
+            <li>Profile</li><br/>
+          </ul>
+        </div>
+        <div class="main-content">
+          <!-- Main content here -->
+        
+
+          <main class="map-should-be-here">
+            <iframe src="map.html" ><p>write it here baby</p></iframe>
+        </main>
+    
+    
+
+
+
+        </div>
+      </div>
+      
+      <style>
+
+        .map-items{
+
+            color: aliceblue;
+        }
+        .container {
+          display: flex;
+          flex-direction: row;
+        }
+        .left-navbar {
+            
+         
+            justify-content: center;
+            align-content: center;
+          width: 200px;
+          background-color: #a0a0a0;
+          padding: 8vh;
+          display: none;
+          border-right: 1px solid #ccc;
+          position: sticky;
+          top: 0;
+          height: 100vh; /* Full height of the viewport */
+          overflow-y: auto; /* Add scrollbar if content overflows */
+        }
+        .main-content {
+          flex-grow: 200;
+          
+          max-width: 100%;
+        
+        }
+        /* Show left navbar on larger devices */
+        @media (min-width: 768px) {
+          .left-navbar {
+            display: block;
+            
+          }
+        }
+      </style>
+
+
+
+
+   
+</body>
+</html>
