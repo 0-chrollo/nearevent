@@ -33,10 +33,10 @@
             <a href="#"><i class="fas fa-envelope" style="color: rgb(177, 182, 188);"></i> Signup</a></li>
             <a href="#"><i class="fas fa-envelope" style="color: rgb(177, 182, 188);;"></i> About</a></li>
         </ul>
-        <p class="info">The map data for Public Wi-Fi latitude and longitude were collected manually,
-             some locations that give access to Free Wi-Fi may not appear. </p>
+        <h1 class="about">Event On Map - is a platfrom for networking and connecting others via the map</h1> 
         <style>
-            .info {
+            .about {
+                display: none;
                 margin-top: 10vh;
                 padding: 1vh;
                 font-size: 11px;
@@ -69,7 +69,206 @@
 
             
         </style>
+
+
+<div class="port">
+
+
+</div>
     </div>
+
+
+
+
+<br/>
+<br/>
+<main class="port">
+
+	<style>
+
+        .port{
+            background-color: rgb(60, 73, 92);
+            position: fixed;
+            max-width: 100%;
+            margin: 0;
+            width: 100%;
+            
+        }
+		.search-bar-container {
+			text-align: center;
+			margin-bottom: 10px;
+          
+
+		}
+		
+		.search-bar {
+			position: relative;
+			display: inline-block;
+           
+		}
+		
+		.search-bar input[type="text"] {
+			padding: 8px 17px;
+			border: 1px solid;
+			border-radius: 12px;
+			width: 300px;
+            background-color:#d6d6d6;
+		}
+		
+		.search-bar i {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			color: #8f8f8f;
+		}
+		
+		.filters-container {
+            max-height: 90px;
+			display:flex;
+            justify-content: space-around;
+            position: sticky;
+          
+			
+		}
+		
+		.filter {
+			margin: 12px;
+			display: flex;
+			align-items: center;
+			flex-basis: 20%;
+            
+		}
+		
+		.filter i {
+			margin-right: 8px;
+            color: #ccc;
+		}
+		
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+		
+		.dropdown-button {
+			padding: 7px 18px;
+			border: none;
+			border-radius: 5px;
+			background-color: #e4e4e4;
+			cursor: pointer;
+		}
+		
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			z-index: 1;
+		}
+		
+		.dropdown-content option {
+			padding: 10px;
+			cursor: pointer;
+		}
+		
+		.dropdown-content option:hover {
+			background-color: #ccc;
+		}
+		
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		
+		@media (min-width: 768px) {
+			.filter {
+				flex-basis: 30%;
+                
+			}
+		}
+		
+		@media (max-width: 767px) {
+			.filter {
+				flex-basis: 100%;
+               
+			}
+		}
+	</style>
+</head>
+ 
+
+	<div class="search-bar-container"><br/>
+		<div class="search-bar">
+			<input type="text" placeholder="Country,City">
+			<i class="fa fa-search"></i>
+		</div>
+	</div>
+	<div class="filters-container">
+		<div class="filter country-filter">
+			<i class="fa fa-flag"></i>
+			<div class="dropdown">
+				<button class="dropdown-button">Country</button>
+				<div class="dropdown-content">
+                    <option>Ghana</option>
+                    <option>Nigeria</option>
+                    <option>SA</option>
+					<option>USA</option>
+					<option>Canada</option>
+					<option>Mexico</option>
+                    <option>Brazil</option>
+				</div>
+			</div>
+		</div>
+		<div class="filter city-filter">
+			<i class="fa fa-map-marker"></i>
+			<div class="dropdown">
+				<button class="dropdown-button">Filter</button>
+				<div class="dropdown-content">
+                    <option>option</option>
+					<option>option</option>
+					<option>option</option>
+					<option>option</option>
+				</div>
+			</div>
+		</div>
+		<div class="filter categories-filter">
+			<i class="fa fa-list"></i>
+			<div class="dropdown">
+				<button class="dropdown-button">Filter</button>
+				<div class="dropdown-content">
+                    <option>option</option>
+					<option>option</option>
+					<option>option</option>
+					<option>option</option>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		const dropdownButtons = document.querySelectorAll('.dropdown-button');
+		
+		dropdownButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				const dropdownContent = button.nextElementSibling;
+				const options = dropdownContent.querySelectorAll('option');
+				
+				options.forEach(option => {
+					option.addEventListener('click', () => {
+						button.textContent = option.textContent;
+					});
+				});
+			});
+		});
+	</script>
+    </div>
+</main>
+
+
+
+
+
+
 
     <div class="container">
         <div class="left-navbar">
@@ -86,14 +285,12 @@
         
 
           <main class="map-should-be-here">
-            <iframe src="map.html" ><p>write it here baby</p></iframe>
+            <iframe src="map.html"></iframe>
         </main>
     
     
 
 
-
-        </div>
       </div>
       
       <style>
@@ -164,3 +361,65 @@
   </style>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
